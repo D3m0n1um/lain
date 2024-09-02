@@ -50,10 +50,6 @@
             this.modifyRemoveAll = new System.Windows.Forms.Button();
             this.btnOptions = new System.Windows.Forms.Button();
             this.AccountView = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.rightPanel = new System.Windows.Forms.Panel();
             this.btnAnalyze = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
@@ -64,6 +60,10 @@
             this.timerAutoLock = new System.Windows.Forms.Timer(this.components);
             this.helperPanel = new System.Windows.Forms.Panel();
             this.leftPanel = new System.Windows.Forms.Panel();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.helperMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AccountView)).BeginInit();
             this.rightPanel.SuspendLayout();
@@ -331,6 +331,8 @@
             this.AccountView.AllowUserToOrderColumns = true;
             this.AccountView.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
             this.AccountView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.AccountView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.AccountView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
@@ -363,7 +365,6 @@
             this.AccountView.DefaultCellStyle = dataGridViewCellStyle3;
             this.AccountView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.AccountView.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.AccountView.EnableHeadersVisualStyles = false;
             this.AccountView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.AccountView.Location = new System.Drawing.Point(0, 0);
             this.AccountView.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
@@ -390,38 +391,6 @@
             this.AccountView.TabIndex = 23;
             this.AccountView.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.AccountView_CellMouseDoubleClick);
             this.AccountView.CellMouseDown += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.AccountView_CellMouseDown);
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Title";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Width = 53;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Account";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            this.Column2.Width = 75;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Password";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            this.Column3.Width = 80;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Link";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            this.Column4.Visible = false;
-            this.Column4.Width = 54;
             // 
             // rightPanel
             // 
@@ -572,6 +541,37 @@
             this.leftPanel.Size = new System.Drawing.Size(574, 532);
             this.leftPanel.TabIndex = 24;
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Title";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 55;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Account";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 77;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Password";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Width = 82;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Link";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.Width = 54;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -632,11 +632,11 @@
         private System.Windows.Forms.Panel leftPanel;
         internal System.Windows.Forms.DataGridView AccountView;
         private System.Windows.Forms.ToolStripMenuItem openLinkBtn;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.Button btnAnalyze;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.Button btnAnalyze;
     }
 }
